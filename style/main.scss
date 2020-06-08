@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import "header.scss";
+#gallery {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 80%;
+  .section_text {
+    color: #111b6e;
+    h2 {
+      font: {
+        weight: bold;
+        size: 35px;
+      }
+    }
+  }
+  .carousel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px;
+    .Btn-left,
+    .Btn-right {
+      width: 50px;
+      height: inherit;
+    }
+    .carousel-items {
+      align-self: center;
+      img {
+        width: 350px;
+        height: 100%;
+      }
+    }
+  }
+}
