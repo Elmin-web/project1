@@ -1,6 +1,7 @@
 var swiper1 = new Swiper(".swiper-container", {
   pagination: {
     el: ".swiper-pagination",
-    loop: true
+    loop: true,
+	test:1
   }
 });
